@@ -1,15 +1,27 @@
+#root {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 16px;
+}
+
 .card {
-  border: 1px solid #fff;
+  border: 1px solid gray;
   border-radius: 10px;
   padding: 16px;
-  box-shadow: 8px 8px white ;
+  box-shadow: 8px 8px gray ;
   text-align: center;
   cursor: pointer;
 }
 
 .card > h2 {
   font-size: 32px;
-  border-left: 4px solid #A9D3E9;
+  border-left: 4px solid #a9e9cb;
 }
 
 .card > img {
@@ -26,7 +38,7 @@
 }
 
 .tag {
-  background:white;
+  background:gray;
   color: black;
   font-size: 12px;
   font-weight: bold;
