@@ -11,21 +11,30 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Centralizar elementos verticalmente */
   border: 1px solid gray;
   border-radius: 10px;
   padding: 16px;
-  box-shadow: 8px 8px gray ;
+  box-shadow: 8px 8px gray;
   text-align: center;
   cursor: pointer;
+  width: 300px;
 }
 
 .card > h2 {
   font-size: 32px;
   border-left: 4px solid #a9e9cb;
+  margin-bottom: 16px; /* Espaçamento abaixo do título */
 }
 
 .card > img {
   border-radius: 10px;
+  width: 100%; /* Imagem ocupando toda a largura do card */
+  height: 200px; /* Altura fixa para manter a proporção */
+  object-fit: cover; /* Redimensionar a imagem mantendo a proporção */
 }
 
 .tags {
@@ -38,11 +47,15 @@
 }
 
 .tag {
-  background:gray;
+  background: gray;
   color: black;
   font-size: 12px;
   font-weight: bold;
   border-radius: 8px;
   padding: 4px 12px;
-  
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efeito de levantamento no hover */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2); /* Sutil sombra no hover */
 }
